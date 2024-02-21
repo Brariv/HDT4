@@ -1,4 +1,4 @@
-interface  UVGStack <E>{
+interface  UVGStackV <E>{
     public void push(E item);
     public E pop(int index);
     public E top();
