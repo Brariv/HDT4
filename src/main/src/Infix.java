@@ -1,5 +1,6 @@
 public class Infix {
-    public void someMethod() {
+
+    public void MakeStack(ArrayList<String>) {
             DevelopedStack newStack = new DevelopedStack();
             StringBuilder postfixExpression = new StringBuilder();
             while (!newStack.isEmpty()) {
