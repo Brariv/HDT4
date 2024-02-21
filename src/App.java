@@ -13,13 +13,14 @@ public class App {
         String filename = sc.nextLine();
 
         Txtreader txtreader = new Txtreader();
+        System.out.println(txtreader.readTxTFile(filename));
         for (String elemento : txtreader.readTxTFile(filename)) {
             newStack.push(elemento);
             
         }
         
 
-        
+
         
         if (newStack.isEmpty()){
             System.out.println("Error: La pila esta vacia");
