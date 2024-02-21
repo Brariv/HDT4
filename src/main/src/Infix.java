@@ -1,12 +1,14 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Infix {
 
-    public void MakeStack(ArrayList<String>) {
-            DevelopedStack newStack = new DevelopedStack();
-            StringBuilder postfixExpression = new StringBuilder();
-            while (!newStack.isEmpty()) {
-                postfixExpression.insert(0, newStack.pop(0) + " ");
-            }
-            System.out.println("Expresión en formato postfix: " + postfixExpression.toString().trim());
-        
+    public static ArrayList<String> infixToPostfix(ArrayList<String> infix) {
+        ArrayList<String> postfix = new ArrayList<String>();
+        for (String token : infix) {
+            
+            
+        }
+        return postfix;
     }
 }
