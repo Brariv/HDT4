@@ -1,3 +1,4 @@
+package com.example;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
@@ -6,6 +7,10 @@ import static org.junit.Assert.assertTrue;
 import java.beans.Transient;
 
 import org.junit.Test;
+
+import com.example.DevelopedStack;
+import com.example.Infix;
+import com.example.Txtreader;
 
 public class AppTest {
 

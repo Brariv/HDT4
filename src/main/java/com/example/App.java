@@ -1,4 +1,5 @@
-import java.lang.reflect.Array;
+package com.example;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
