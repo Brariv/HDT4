@@ -67,9 +67,9 @@ public class AppTest {
     
     @Test
     public void testInfixToPostfix() {
-        assertEquals(Infix.infixToPostfix(new Txtreader().readTxTFile("prueba.txt")).get(0), "6");
-        assertEquals(Infix.infixToPostfix(new Txtreader().readTxTFile("prueba.txt")).get(1), "2");
-        assertEquals(Infix.infixToPostfix(new Txtreader().readTxTFile("prueba.txt")).get(2), "3");
-        assertEquals(Infix.infixToPostfix(new Txtreader().readTxTFile("prueba.txt")).get(3), "+");
+        assertEquals(Infix.infixToPostfixa(new Txtreader().readTxTFile("prueba.txt")).get(0), "6");
+        assertEquals(Infix.infixToPostfixa(new Txtreader().readTxTFile("prueba.txt")).get(1), "2");
+        assertEquals(Infix.infixToPostfixa(new Txtreader().readTxTFile("prueba.txt")).get(2), "3");
+        assertEquals(Infix.infixToPostfixa(new Txtreader().readTxTFile("prueba.txt")).get(3), "+");
     }
 }

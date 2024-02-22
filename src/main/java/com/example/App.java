@@ -16,7 +16,7 @@ public class App {
         Txtreader txtreader = new Txtreader();
 
         ArrayList<String> infix = txtreader.readTxTFile(filename);
-        ArrayList<String> postfix = Infix.infixToPostfix(infix);
+        ArrayList<String> postfix = Infix.infixToPostfixa(infix);
         System.out.println("Seleccione el metodo que desea usar: \n 1. Vector \n 2. List \n 3. ArrayList");
         int metodo = sc.nextInt();
         
