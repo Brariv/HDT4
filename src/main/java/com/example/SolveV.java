@@ -1,12 +1,12 @@
 package com.example;
 import java.util.ArrayList;
 
-public class Vector {
+public class SolveV {
     
 
     static DevelopedStackVector newStack = new DevelopedStackVector();
 
-    public String solveVector(ArrayList<String> Arr){
+    public String solve(ArrayList<String> Arr){
         int Error = 0;
         for (String elemento : Arr) {
             newStack.push(elemento);
