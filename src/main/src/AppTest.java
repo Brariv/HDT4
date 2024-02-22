@@ -3,6 +3,8 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
+import java.beans.Transient;
+
 import org.junit.Test;
 
 public class AppTest {
@@ -58,4 +60,11 @@ public class AppTest {
         assertNull(stack.pop(0));
     }
     
+    @Test
+    public void testInfixToPostfix() {
+        assertEquals(Infix.infixToPostfix(new Txtreader().readTxTFile("prueba.txt")).get(0), "6");
+        assertEquals(Infix.infixToPostfix(new Txtreader().readTxTFile("prueba.txt")).get(1), "2");
+        assertEquals(Infix.infixToPostfix(new Txtreader().readTxTFile("prueba.txt")).get(2), "3");
+        assertEquals(Infix.infixToPostfix(new Txtreader().readTxTFile("prueba.txt")).get(3), "+");
+    }
 }

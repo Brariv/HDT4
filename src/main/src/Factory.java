@@ -3,10 +3,11 @@ import java.util.ArrayList;
 
 public class Factory{
 
-    public static void FactoryMethod(int metodo, ArrayList<String> Arr){
+    public static String FactoryMethod(int metodo, ArrayList<String> Arr){
         if (metodo == 1){
             Vector newStack = new Vector();
-            newStack.solveVector(Arr);
+            String Result = newStack.solveVector(Arr);
+            return Result;
         }
         else if (metodo == 2){
             UVGStackL newStack = new UVGStackL();

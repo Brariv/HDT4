@@ -12,8 +12,6 @@ public class Vector {
             
         }
         
-
-
         
         if (newStack.isEmpty()){
             Error = 1;

@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class App {
@@ -11,13 +12,14 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         String filename = sc.nextLine();
-
         Txtreader txtreader = new Txtreader();
-        System.out.println(txtreader.readTxTFile(filename));
+
+        ArrayList<String> infix = txtreader.readTxTFile(filename);
+        ArrayList<String> postfix = Infix.infixToPostfix(infix);
         System.out.println("Seleccione el metodo que desea usar: \n 1. Vector \n 2. List \n 3. ArrayList");
         int metodo = sc.nextInt();
         
-        Factory.FactoryMethod(metodo, txtreader.readTxTFile(filename));
+        Factory.FactoryMethod(metodo, postfix);
         
     }
 }
