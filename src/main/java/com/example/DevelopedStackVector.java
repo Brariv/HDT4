@@ -5,7 +5,7 @@ import java.util.Vector;
  * Esta clase representa una implementación de la interfaz UVGStack utilizando un Vector como estructura de datos subyacente.
  * Permite realizar operaciones básicas de una pila, como agregar elementos, quitar elementos, obtener el elemento en la cima y verificar si la pila está vacía.
  */
-public class DevelopedStack implements UVGStackV{
+public class DevelopedStackVector implements UVGStackV{
 
     Vector<Object> stack = new Vector<Object>();
 

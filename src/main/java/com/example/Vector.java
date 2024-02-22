@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Vector {
     
 
-    static DevelopedStack newStack = new DevelopedStack();
+    static DevelopedStackVector newStack = new DevelopedStackVector();
 
     public String solveVector(ArrayList<String> Arr){
         int Error = 0;

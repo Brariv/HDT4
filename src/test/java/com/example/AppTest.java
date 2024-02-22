@@ -4,17 +4,14 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
-import java.beans.Transient;
 
 import org.junit.Test;
 
-import com.example.DevelopedStack;
-import com.example.Infix;
-import com.example.Txtreader;
+
 
 public class AppTest {
 
-    private DevelopedStack stack = new DevelopedStack();
+    private DevelopedStackVector stack = new DevelopedStackVector();
 
     @Test
     public void testApp() {
